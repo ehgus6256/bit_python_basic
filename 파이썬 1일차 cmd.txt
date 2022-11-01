@@ -1,0 +1,911 @@
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\BIT>python -h
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Options (and corresponding environment variables):
+-b     : issue warnings about str(bytes_instance), str(bytearray_instance)
+         and comparing bytes/bytearray with str. (-bb: issue errors)
+-B     : don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x
+-c cmd : program passed in as string (terminates option list)
+-d     : turn on parser debugging output (for experts only, only works on
+         debug builds); also PYTHONDEBUG=x
+-E     : ignore PYTHON* environment variables (such as PYTHONPATH)
+-h     : print this help message and exit (also -? or --help)
+-i     : inspect interactively after running script; forces a prompt even
+         if stdin does not appear to be a terminal; also PYTHONINSPECT=x
+-I     : isolate Python from the user's environment (implies -E and -s)
+-m mod : run library module as a script (terminates option list)
+-O     : remove assert and __debug__-dependent statements; add .opt-1 before
+         .pyc extension; also PYTHONOPTIMIZE=x
+-OO    : do -O changes and also discard docstrings; add .opt-2 before
+         .pyc extension
+-P     : don't prepend a potentially unsafe path to sys.path
+-q     : don't print version and copyright messages on interactive startup
+-s     : don't add user site directory to sys.path; also PYTHONNOUSERSITE
+-S     : don't imply 'import site' on initialization
+-u     : force the stdout and stderr streams to be unbuffered;
+         this option has no effect on stdin; also PYTHONUNBUFFERED=x
+-v     : verbose (trace import statements); also PYTHONVERBOSE=x
+         can be supplied multiple times to increase verbosity
+-V     : print the Python version number and exit (also --version)
+         when given twice, print more information about the build
+-W arg : warning control; arg is action:message:category:module:lineno
+         also PYTHONWARNINGS=arg
+-x     : skip first line of source, allowing use of non-Unix forms of #!cmd
+-X opt : set implementation-specific option
+--check-hash-based-pycs always|default|never:
+         control how Python invalidates hash-based .pyc files
+--help-env      : print help about Python environment variables and exit
+--help-xoptions : print help about implementation-specific -X options and exit
+--help-all      : print complete help information and exit
+Arguments:
+file   : program read from script file
+-      : program read from stdin (default; interactive mode if a tty)
+arg ...: arguments passed to program in sys.argv[1:]
+
+C:\Users\BIT>python -h
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Options (and corresponding environment variables):
+-b     : issue warnings about str(bytes_instance), str(bytearray_instance)
+         and comparing bytes/bytearray with str. (-bb: issue errors)
+-B     : don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x
+-c cmd : program passed in as string (terminates option list)
+-d     : turn on parser debugging output (for experts only, only works on
+         debug builds); also PYTHONDEBUG=x
+-E     : ignore PYTHON* environment variables (such as PYTHONPATH)
+-h     : print this help message and exit (also -? or --help)
+-i     : inspect interactively after running script; forces a prompt even
+         if stdin does not appear to be a terminal; also PYTHONINSPECT=x
+-I     : isolate Python from the user's environment (implies -E and -s)
+-m mod : run library module as a script (terminates option list)
+-O     : remove assert and __debug__-dependent statements; add .opt-1 before
+         .pyc extension; also PYTHONOPTIMIZE=x
+-OO    : do -O changes and also discard docstrings; add .opt-2 before
+         .pyc extension
+-P     : don't prepend a potentially unsafe path to sys.path
+-q     : don't print version and copyright messages on interactive startup
+-s     : don't add user site directory to sys.path; also PYTHONNOUSERSITE
+-S     : don't imply 'import site' on initialization
+-u     : force the stdout and stderr streams to be unbuffered;
+         this option has no effect on stdin; also PYTHONUNBUFFERED=x
+-v     : verbose (trace import statements); also PYTHONVERBOSE=x
+         can be supplied multiple times to increase verbosity
+-V     : print the Python version number and exit (also --version)
+         when given twice, print more information about the build
+-W arg : warning control; arg is action:message:category:module:lineno
+         also PYTHONWARNINGS=arg
+-x     : skip first line of source, allowing use of non-Unix forms of #!cmd
+-X opt : set implementation-specific option
+--check-hash-based-pycs always|default|never:
+         control how Python invalidates hash-based .pyc files
+--help-env      : print help about Python environment variables and exit
+--help-xoptions : print help about implementation-specific -X options and exit
+--help-all      : print complete help information and exit
+Arguments:
+file   : program read from script file
+-      : program read from stdin (default; interactive mode if a tty)
+arg ...: arguments passed to program in sys.argv[1:]
+
+C:\Users\BIT>python -V
+Python 3.11.0
+
+C:\Users\BIT>python
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("hi")
+hi
+>>> print()
+
+>>> print(1+1)
+2
+>>> print(10000-2500)
+7500
+>>> print("1+1")
+1+1
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> exit()
+
+C:\Users\BIT>python
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> python -h
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'python' is not defined
+>>> exit()
+
+C:\Users\BIT>python -h
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Options (and corresponding environment variables):
+-b     : issue warnings about str(bytes_instance), str(bytearray_instance)
+         and comparing bytes/bytearray with str. (-bb: issue errors)
+-B     : don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x
+-c cmd : program passed in as string (terminates option list)
+-d     : turn on parser debugging output (for experts only, only works on
+         debug builds); also PYTHONDEBUG=x
+-E     : ignore PYTHON* environment variables (such as PYTHONPATH)
+-h     : print this help message and exit (also -? or --help)
+-i     : inspect interactively after running script; forces a prompt even
+         if stdin does not appear to be a terminal; also PYTHONINSPECT=x
+-I     : isolate Python from the user's environment (implies -E and -s)
+-m mod : run library module as a script (terminates option list)
+-O     : remove assert and __debug__-dependent statements; add .opt-1 before
+         .pyc extension; also PYTHONOPTIMIZE=x
+-OO    : do -O changes and also discard docstrings; add .opt-2 before
+         .pyc extension
+-P     : don't prepend a potentially unsafe path to sys.path
+-q     : don't print version and copyright messages on interactive startup
+-s     : don't add user site directory to sys.path; also PYTHONNOUSERSITE
+-S     : don't imply 'import site' on initialization
+-u     : force the stdout and stderr streams to be unbuffered;
+         this option has no effect on stdin; also PYTHONUNBUFFERED=x
+-v     : verbose (trace import statements); also PYTHONVERBOSE=x
+         can be supplied multiple times to increase verbosity
+-V     : print the Python version number and exit (also --version)
+         when given twice, print more information about the build
+-W arg : warning control; arg is action:message:category:module:lineno
+         also PYTHONWARNINGS=arg
+-x     : skip first line of source, allowing use of non-Unix forms of #!cmd
+-X opt : set implementation-specific option
+--check-hash-based-pycs always|default|never:
+         control how Python invalidates hash-based .pyc files
+--help-env      : print help about Python environment variables and exit
+--help-xoptions : print help about implementation-specific -X options and exit
+--help-all      : print complete help information and exit
+Arguments:
+file   : program read from script file
+-      : program read from stdin (default; interactive mode if a tty)
+arg ...: arguments passed to program in sys.argv[1:]
+
+C:\Users\BIT>python
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("3.11.0")
+3.11.0
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> python -V
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'python' is not defined
+>>> exit()
+
+C:\Users\BIT>python -V
+Python 3.11.0
+
+C:\Users\BIT>python
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(1+1)
+2
+>>> print(2+3)
+5
+>>> print(3-2)
+1
+>>> print(3*7)
+21
+>>> 3+2
+5
+>>> print(2**3)
+8
+>>> print(2//3)
+0
+>>> print(5//3)
+1
+>>> print(5%3)
+2
+>>> x=1
+>>> print(x\)
+  File "<stdin>", line 1
+    print(x\)
+            ^
+SyntaxError: unexpected character after line continuation character
+>>> print(x)
+1
+>>> y = 2
+>>> print(x+y)
+3
+>>> person = 13
+>>> month = 6
+>>> days = 30
+>>> print(month*days*person)
+2340
+>>> company = bit
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'bit' is not defined. Did you mean: 'bin'?
+>>> company = 'bit'
+>>> company = "bit"
+>>> print(company)
+bit
+>>> print("1 + 1 = '2'")
+1 + 1 = '2'
+>>> print("1+1="2"")
+  File "<stdin>", line 1
+    print("1+1="2"")
+          ^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print("1+1='2'")
+1+1='2'
+>>> print('1+1="2"')
+1+1="2"
+>>> company = "교육센터"
+>>> print(company)
+교육센터
+>>> print(company)
+교육센터
+>>> x=1
+>>> y=2
+>>> z=x+y
+>>> z
+3
+>>> print(z)
+3
+>>> z="bit"
+>>> z
+'bit'
+>>> print(z\)
+  File "<stdin>", line 1
+    print(z\)
+            ^
+SyntaxError: unexpected character after line continuation character
+>>> print(z)
+bit
+>>> a = "window"
+>>> print(a+a)
+windowwindow
+>>> print(a-a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>> print(a*a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> print(a*10)
+windowwindowwindowwindowwindowwindowwindowwindowwindowwindow
+>>> print(a**3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+>>> lang = python"
+  File "<stdin>", line 1
+    lang = python"
+                 ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> lang = "python"
+>>> version = "3.11.0"
+>>> print(lang + " "+ version)
+python 3.11.0
+>>> r = '''
+... hi
+... hello
+... '''
+>>> print(r)
+
+hi
+hello
+
+>>> u = """
+... hi
+... hello
+... """
+>>> print(u+r)
+
+hi
+hello
+
+hi
+hello
+
+>>>
+>>> skdfn
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'skdfn' is not defined
+>>> p = hihello
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hihello' is not defined
+>>> p = "hihello"
+>>> q = "hi/thello
+  File "<stdin>", line 1
+    q = "hi/thello
+        ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> q = "hi/thello"
+>>> print(q)
+hi/thello
+>>> q = "hi\thello"
+>>> print(q)
+hi      hello
+>>> print(\\500)
+  File "<stdin>", line 1
+    print(\\500)
+           ^
+SyntaxError: unexpected character after line continuation character
+>>> print("\\500")
+\500
+>>> exit()
+
+C:\Users\BIT>python
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("1+1=2")
+1+1=2
+>>> print(+)
+  File "<stdin>", line 1
+    print(+)
+           ^
+SyntaxError: invalid syntax
+>>> print('')
+
+>>>
+>>> a = 1
+>>> print('a'+'a' = 'a'+'a')
+  File "<stdin>", line 1
+    print('a'+'a' = 'a'+'a')
+          ^^^^^^^^^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+>>> print(a "+" a "=" a + a)
+  File "<stdin>", line 1
+    print(a "+" a "=" a + a)
+            ^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(a"+")
+  File "<stdin>", line 1
+    print(a"+")
+           ^^^
+SyntaxError: invalid syntax
+>>> print("%d+%d=%d")
+%d+%d=%d
+>>> print("%d"%a)
+1
+>>> print("%d" %a)
+1
+>>> print("%d" %c)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'c' is not defined
+>>> print("%d" %z)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'z' is not defined
+>>> print("%d" %a)
+1
+>>> print("%d+%d" %a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not enough arguments for format string
+>>> print("%d" %a)
+1
+>>> f=3
+>>> print("%d"%f)
+3
+>>> print("%d + %d" %a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not enough arguments for format string
+>>> print("%d + %d" %(a,a))
+1 + 1
+>>> print("%d + %d" %(a,f))
+1 + 3
+>>> print("%d + %d = %d" %(a,a,a+a))
+1 + 1 = 2
+>>> company = "bit"
+>>> print("company = %s" %company)
+company = bit
+>>> company = "kakao"
+>>> print("company = %s" %company)
+company = kakao
+>>> print("company = %s, a = %d" %(company,a))
+company = kakao, a = 1
+>>> print("%f" %(1/3))
+0.333333
+>>> print(company)
+kakao
+>>> print(company[1])
+a
+>>> print(company[0])
+k
+>>> print(company[4])
+o
+>>> print(company[1])
+a
+>>> print(company[5])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> print(f"{a} + {a} = {a+a}")
+1 + 1 = 2
+>>> print(f"{2/3}")
+0.6666666666666666
+>>> print(f"{2}/{3}")
+2/3
+>>> print("%.3f"%(2/3))
+0.667
+>>> print("%.5f"%(2/3))
+0.66667
+>>> print()
+
+>>> print("%2d"%10)
+10
+>>> print("%1d"%10)
+10
+>>> print("%2d"%1)
+ 1
+>>> print("%1d"%100)
+100
+>>>
+>>> print(company.find("v"))
+-1
+>>> print(company.find("o"))
+4
+>>> print(company.find("k"))
+0
+>>> print(company.find("k"))
+0
+>>> print(company.find("a"))
+1
+>>> print(company.find("a"))
+1
+>>> print(company.index("a"))
+1
+>>> print(company[company.find()])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: find() takes at least 1 argument (0 given)
+>>>
+>>> print(company[company.find("o")])
+o
+>>> print(company.count("o"))
+1
+>>> print(company.count("k"))
+2
+>>> print(company.count("a"))
+2
+>>> print(len(company))
+5
+>>> print(1 + "hi")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> int a = 1
+  File "<stdin>", line 1
+    int a = 1
+        ^
+SyntaxError: invalid syntax
+>>> int b = "hi"
+  File "<stdin>", line 1
+    int b = "hi"
+        ^
+SyntaxError: invalid syntax
+>>> inta = 1
+>>> intb = "hi"
+>>> print("a+b")
+a+b
+>>> print(a+b)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'b' is not defined
+>>> name = "kim"
+>>> age = 10
+>>> print("name : %s , age : %s"%(name,age))
+name : kim , age : 10
+>>> print(f"name:{name},age:{age})
+  File "<stdin>", line 1
+    print(f"name:{name},age:{age})
+          ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print(f"name:{name},age:{age}")
+name:kim,age:10
+>>> person ={'name':"kim,'age':10}
+  File "<stdin>", line 1
+    person ={'name':"kim,'age':10}
+                    ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> person ={'name':"kim",'age':10}
+>>> print(person)
+{'name': 'kim', 'age': 10}
+>>> print(person["age"])
+10
+>>> print(person[age])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 10
+>>> print(person["name"])
+kim
+>>> print(person["company"])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'company'
+>>> print(person.get["company"])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> print(person.get("company"))
+None
+>>> print(person.keys())
+dict_keys(['name', 'age'])
+>>> name = 'kim'
+>>> person = {name:"kim"}
+>>> print(person)
+{'kim': 'kim'}
+>>> person2 = {'name' : name}
+>>> print(person2)
+{'name': 'kim'}
+>>> person2 = {name : name}
+>>> print(person2)
+{'kim': 'kim'}
+>>> person2 = {'name' : name}
+>>> print(person2)
+{'name': 'kim'}
+>>> person2 = {"name": name, "age":age}
+>>> print(person2)
+{'name': 'kim', 'age': 10}
+>>> person2[age] = 24
+>>> print(person2)
+{'name': 'kim', 'age': 10, 10: 24}
+>>> person2[age] = 24
+>>>
+>>>
+>>> list
+<class 'list'>
+>>> tmp = [1,2,3,4]
+>>> print(tmp)
+[1, 2, 3, 4]
+>>> print(tmp[0])
+1
+>>> print(tmp[3])
+4
+>>> person ={name:"kim"}
+>>> person2 ={name:'lee}
+  File "<stdin>", line 1
+    person2 ={name:'lee}
+                   ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> person2 ={name:'lee'}
+>>> tmp = [person,person2]
+>>> print(tmp)
+[{'kim': 'kim'}, {'kim': 'lee'}]
+>>> print(tmp[0].get('name'))
+None
+>>> print(tmp[0].get("name"))
+None
+>>> person3 = {}
+>>> person3 = {'name' : 'park'}
+>>> tmp
+[{'kim': 'kim'}, {'kim': 'lee'}]
+>>> tmp.append(person3)
+>>> tmp
+[{'kim': 'kim'}, {'kim': 'lee'}, {'name': 'park'}]
+>>> print(len(tmp))
+3
+>>> tmp.remove
+<built-in method remove of list object at 0x000001E27FEE93C0>
+>>> tmp.remove(person)
+>>> print(tmp)
+[{'kim': 'lee'}, {'name': 'park'}]
+>>> tmp.remove(person2)
+>>> tmp.remove(person3)
+>>> num_list = [3,45,2,1,3,54,56,2,3,45]
+>>> del tmp[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list assignment index out of range
+>>> num_list = [3,45,2,1,3,54,56,2,3,45]
+>>> num_list.sort()
+>>> print(num_list)
+[1, 2, 2, 3, 3, 3, 45, 45, 54, 56]
+>>> num_list.reverse()
+>>> print(num_list)
+[56, 54, 45, 45, 3, 3, 3, 2, 2, 1]
+>>> num_list.insert(4,4)
+>>> print(num_list)
+[56, 54, 45, 45, 4, 3, 3, 3, 2, 2, 1]
+>>> print(num_list[:5])
+[56, 54, 45, 45, 4]
+>>> person = {'name':'park'}
+>>> person2 = {'name':'lee'}
+>>> person1 = {'name':'kim'}
+>>> tmp = [person, person1, person2]
+>>> tmp[0]
+{'name': 'park'}
+>>> person['name'] = 'jung'
+>>> tmp[0]
+{'name': 'jung'}
+>>> tmp
+[{'name': 'jung'}, {'name': 'kim'}, {'name': 'lee'}]
+>>> tmp2 = tmp.copy()\
+... tmp2 = tmp.copy()
+  File "<stdin>", line 2
+    tmp2 = tmp.copy()
+    ^^^^
+SyntaxError: invalid syntax
+>>> tmp2 = tmp.copy()
+>>> tmp3 = tmp
+>>> tmp2
+[{'name': 'jung'}, {'name': 'kim'}, {'name': 'lee'}]
+>>> tmp3
+[{'name': 'jung'}, {'name': 'kim'}, {'name': 'lee'}]
+>>> tmp3.append(1)
+>>> tmp3
+[{'name': 'jung'}, {'name': 'kim'}, {'name': 'lee'}, 1]
+>>> tmp
+[{'name': 'jung'}, {'name': 'kim'}, {'name': 'lee'}, 1]
+>>> tmp21
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tmp21' is not defined. Did you mean: 'tmp2'?
+>>> tmp2
+[{'name': 'jung'}, {'name': 'kim'}, {'name': 'lee'}]
+>>> person['name'] = 'kim'
+>>> tmp
+[{'name': 'kim'}, {'name': 'kim'}, {'name': 'lee'}, 1]
+>>> tmp
+[{'name': 'kim'}, {'name': 'kim'}, {'name': 'lee'}, 1]
+>>> tmp3
+[{'name': 'kim'}, {'name': 'kim'}, {'name': 'lee'}, 1]
+>>> tmp2
+[{'name': 'kim'}, {'name': 'kim'}, {'name': 'lee'}]
+>>> id(tmp)
+2072320511296
+>>> id(tmp2)
+2072320578496
+>>> id(tmp3)
+2072320511296
+>>> id(tmp[0])
+2072317440384
+>>> id(tmp2[0])
+2072317440384
+>>> id(tmp3[0])
+2072317440384
+>>> tmp4 = [person.copy()]
+>>> id(tmp4)
+2072320575808
+>>> x = 1
+>>> y = 2
+>>> num1 = [x,y]
+>>> num2 = num1.copy()
+>>> num1
+[1, 2]
+>>> num2
+[1, 2]
+>>> x = 3
+>>> num
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'num' is not defined. Did you mean: 'num1'?
+>>> num1
+[1, 2]
+>>> num2
+[1, 2]
+>>> tmp = {'number}
+  File "<stdin>", line 1
+    tmp = {'number}
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> tmp = {'number' : x}
+>>> a = (1,2,3)
+>>> a[0]
+1
+>>> a.append(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'append'
+>>> a.remove(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'remove'
+>>> a =
+  File "<stdin>", line 1
+    a =
+        ^
+SyntaxError: invalid syntax
+>>> a = {1,2,3}
+>>> a
+{1, 2, 3}
+>>> a.add()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: set.add() takes exactly one argument (0 given)
+>>> a.add(4)
+>>> a
+{1, 2, 3, 4}
+>>> a.add(2)
+>>> a
+{1, 2, 3, 4}
+>>> tmp = [1,2,3,3,2,1,0]
+>>> a = set(tmp)
+>>> a
+{0, 1, 2, 3}
+>>> a
+{0, 1, 2, 3}
+>>> a[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> tmp2 = list(a)
+>>>
+>>> tmp2
+[0, 1, 2, 3]
+>>> tmp[0]
+1
+>>> tmp2[0]
+0
+>>> tmp3 = [429,2,3,5,34,4,1,2,6,5,2,3,3,5,45,5,1,2,2,3,2]
+>>> set(tmp3)
+{1, 2, 3, 34, 5, 4, 6, 429, 45}
+>>> b = list(tmp3)
+>>> b
+[429, 2, 3, 5, 34, 4, 1, 2, 6, 5, 2, 3, 3, 5, 45, 5, 1, 2, 2, 3, 2]
+>>> set(tmp3)
+{1, 2, 3, 34, 5, 4, 6, 429, 45}
+>>> b = set(tmp3)
+>>> b[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> a = {1,2,3}
+>>> b = {2,3,4,5}
+>>> a-b
+{1}
+>>> a|b
+{1, 2, 3, 4, 5}
+>>> a&b
+{2, 3}
+>>> c = list(a&b)
+>>> c[1]
+3
+>>> b = list(set(tmp3))
+>>> b[2]
+3
+>>> b[8]
+45
+>>> b.sort()
+>>> b[8]
+429
+>>> a
+{1, 2, 3}
+>>> a.add(4)
+>>> a.add(5)
+>>> a.add(6)
+>>> a
+{1, 2, 3, 4, 5, 6}
+>>> a.update([4,5,6,7])
+>>> a
+{1, 2, 3, 4, 5, 6, 7}
+>>> a.remove(4)
+>>> a
+{1, 2, 3, 5, 6, 7}
+>>> a = True
+>>> a
+True
+>>> a = False
+>>> a
+False
+>>> a = true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> a = false
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'false' is not defined. Did you mean: 'False'?
+>>> a = True
+>>> a
+True
+>>> 1>2
+False
+>>> 1<2
+True
+>>> 1==1
+True
+>>> 1==22
+False
+>>> 1>=1
+True
+>>> 5<=4
+False
+>>> 1<=1
+True
+>>> 1<1
+False
+>>> tmp = [2,3,4,5,6,7,7,5,4,3]
+>>> set(tmp)
+{2, 3, 4, 5, 6, 7}
+>>> list(set(tmp))
+[2, 3, 4, 5, 6, 7]
+>>> a = list(set(tmp))
+>>> a.sort
+<built-in method sort of list object at 0x000001E27FEEB680>
+>>> a.sort()
+>>> a[2]>4
+False
+>>> a[2] >= 4
+True
+>>> person1 = {"name" : "kim", 'score':90}
+>>> person2 = {"name" : "park", 'score':70}
+>>> person3 = {"name" : "lee", 'score':10}
+>>> person3 = {"name" : "lee", 'score':100}
+>>> a = [person1 , person2 ,person3 ]
+>>> print(a)
+[{'name': 'kim', 'score': 90}, {'name': 'park', 'score': 70}, {'name': 'lee', 'score': 100}]
+>>> a
+[{'name': 'kim', 'score': 90}, {'name': 'park', 'score': 70}, {'name': 'lee', 'score': 100}]
+>>> print("person1의 이름은" name "이고 score는"score)
+  File "<stdin>", line 1
+    print("person1의 이름은" name "이고 score는"score)
+          ^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print
+<built-in function print>
+>>> b>=80
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '>=' not supported between instances of 'list' and 'int'
+>>> p>=80
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'p' is not defined
+>>> p = >=80
+  File "<stdin>", line 1
+    p = >=80
+        ^^
+SyntaxError: invalid syntax
+>>> p = 80
+>>> print(a)
+[{'name': 'kim', 'score': 90}, {'name': 'park', 'score': 70}, {'name': 'lee', 'score': 100}]
+>>> person1
+{'name': 'kim', 'score': 90}
+>>> person1 = {"name" : "kim", 'score':90}
+>>> person2 = {"name" : "park", 'score':70}
+>>> person3 = {"name" : "lee", 'score':100}
+>>> a = [person1, person2, person3]
+>>> print(person1>=80)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '>=' not supported between instances of 'dict' and 'int'
+>>> print(person1)
+{'name': 'kim', 'score': 90}
+>>> print(person1)>=80
+{'name': 'kim', 'score': 90}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '>=' not supported between instances of 'NoneType' and 'int'
+>>> TypeError
+<class 'TypeError'>
+>>> person1 = {'name' : 'kim', 'score' :90}
+>>> person2 = {'name' : 'park', 'score' :70}
+>>> person3 = {'name' : 'lee', 'score' :100}
+>>> a = [person1, person2, person3]
+>>> a
+[{'name': 'kim', 'score': 90}, {'name': 'park', 'score': 70}, {'name': 'lee', 'score': 100}]
+>>> print(f"person1 의 이름은 {a[0].get('name')}, score 는 {a[0].get('score')로 {a[0].get('score')>=80})
+  File "<stdin>", line 1
+    print(f"person1 의 이름은 {a[0].get('name')}, score 는 {a[0].get('score')로 {a[0].get('score')>=80})
+          ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print(f'person1 의 이름은 {a[0].get('name')}, score 는 {a[0].get('score')로 {a[0].get('score')>=80}')
+  File "<stdin>", line 1
+    print(f'person1 의 이름은 {a[0].get('name')}, score 는 {a[0].get('score')로 {a[0].get('score')>=80}')
+                                     ^^^^
+SyntaxError: f-string: unmatched '('
+>>> print(f'person1 의 이름은 {a[0].get("name")}, score 는 {a[0].get("score")로 {a[0].get("score")>=80}')
+  File "<stdin>", line 1
+    print(f'person1 의 이름은 {a[0].get("name")}, score 는 {a[0].get("score")로 {a[0].get("score")>=80}')
+                                                                                                  ^
+SyntaxError: f-string: expecting '}'
+>>>
