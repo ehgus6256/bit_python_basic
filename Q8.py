@@ -64,7 +64,7 @@
 
 
 
-# def sum(*nums):  # *은 몇개인지 모를 다수를 입력할때 사용
+# def sum(*nums):  # *은 몇개인지 모를 다수를 입력할때 사용(튜플(읽기전용)로 받겠다)
 #     answer = 0
 #     for num in nums:
 #         answer = answer + num
@@ -75,16 +75,20 @@
 
 
 
-def make_profile(**a):
-    print(a)
-    return
+# def make_profile(**a):    # **는 key:value 로 받겠다
+#     print(a)
+#     return
 
-print(make_profile(name = "park", age = 20))
+# print(make_profile(name = "park", age = 20, company = 'naver'))
 
-
-
-
+# # {'name': 'park', 'age': 20, 'company': 'naver'}
 
 
 
-
+#함수를 정의할땐 def 이름(매개변수):
+#print("hi")도 함수의 종류이며 이때 "hi"는 인수이다
+#def print(st):
+#def print(*st)     *type(st) = tuple(읽기전용)
+#print("hi", "hello", 1,2,3)
+#def print)(**st)    *type(st) = dictionary
+#print(name = "kim", age = 20)

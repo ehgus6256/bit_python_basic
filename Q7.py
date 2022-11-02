@@ -22,15 +22,29 @@ a = [
 #     i = i+i[a]
 
 
+# 하나의 리스트에 합
 # c = [1,57,65,7,1,2,5,7,5,6,]
-t = 0
-n = 0
-while t < len(a):   #len(a) = 9
-    el = 0
-    i =0
-    while i<len(a):
-        el = el + a[i[n]]
-        i = i +1
-    print(el)
-    t +=1
-    n +=1
+# el = 0
+# i = 0
+# while i<len(c):
+#     el = el + c[i]
+#     i = i +1
+#     print(el)
+
+
+
+# t = 0
+# n = 0
+# while t < len(a):   #len(a) = 9
+#     el = 0
+#     i = 0
+#     while i<len(a):
+#         el = el + (a[i[n]])
+#         i = i +1
+#     print(el)
+#     t +=1
+#     n +=1
+
+
+
+#어디가 가장 큰지
